@@ -1,0 +1,62 @@
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+		
+		
+		::i-block-chrome, .dt-sc-contact-details-on-map .dt-sc-map-overlay { display: block; }
+		::i-block-chrome, .menu-with-slanting-splitter #main-menu ul.menu > li::before { right: 0; }
+		
+		::i-block-chrome, .footer-copyright .menu-links li { margin: 0 0 0 28px; }
+		::i-block-chrome, #toTop:hover span:before{transform:skewX(-42deg); -webkit-transform:skewX(-42deg); left:14px;}
+		::i-block-chrome, #toTop:hover span:after{transform:skewX(42deg); -webkit-transform:skewX(42deg); right:14px;}
+		::i-block-chrome, .dt-sc-team.hide-details-show-on-hover:hover:after{width:50.15%;}
+		::i-block-chrome, .vc_col-sm-3 .dt-sc-team.hide-details-show-on-hover:hover:after{width:50.20%;}
+		::i-block-chrome, .dt-sc-sociable li a, ::i-block-chrome, .dt-sc-team-social li a{position:relative;}
+		::i-block-chrome, .dt-sc-sociable li a:before, ::i-block-chrome, .dt-sc-team-social li a:before{position:absolute; left:0; right:0;}
+		
+		::i-block-chrome, .dt-sc-team-social.diamond-square-border li a{top:-5px;}
+		
+		::i-block-chrome, .brands-carousel .slick-next, ::i-block-chrome, .brands-carousel .slick-prev{background:#CCC; border-radius:100%; -webkit-border-radius:100%;}
+		::i-block-chrome, .brands-carousel .slick-next:hover, ::i-block-chrome, .brands-carousel .slick-prev:hover{background:#CCC;}
+
+	}
+	
+	
+	
+	@media all and (min-width:0\0) and (min-resolution:.001dpcm) {
+	
+		#main-menu ul li.menu-item-simple-parent ul, #main-menu ul li.menu-item-simple-parent ul li ul, #main-menu ul li.menu-item-simple-parent ul li ul li ul { z-index: auto; }
+		
+		.vc_row-flex.vc_row { display: table !important; }
+		.vc_row.vc_row-flex.dt-sc-map-overlay { display: block !important; }
+		
+		.dt-sc-contact-details-on-map.hide-overlay .vc_row.vc_row-flex.dt-sc-map-overlay { display: none !important; }
+		
+		.spa-map::before { content: none !important; }
+				
+	}
+	
+	/* IE11 only override */	
+	_:-ms-fullscreen, :root .dt-sc-contact-details-on-map .dt-sc-map-overlay { padding: 64px 0 0; }	
+	
+	
+	/* Firefox override */	
+	@-moz-document url-prefix() {
+		
+		.dt-sc-contact-details-on-map .dt-sc-map-overlay  { padding: 68px 0 0; }	
+		.university-contact-form .button-field i { height: 48px; line-height: 48px; }
+		
+		.brands-carousel .slick-next i::before, .brands-carousel .slick-prev i::before{position:absolute;}
+		.brands-carousel .slick-prev i::before{left:0px;}
+		.brands-carousel .slick-next i::before{right:0px;}
+		
+		
+		
+	}
+	
+	/* Firefox override */	
+	@-moz-document url-prefix() {
+		
+		.dt-sc-row-on-overlay.vc_row > .wpb_column > .vc_column-inner > .wpb_wrapper > .vc_row.vc_inner ~ .vc_row.vc_inner > .vc_col-has-fill > .vc_column-inner{padding:180px 50px 100px;}
+		
+	}

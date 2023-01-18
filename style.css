@@ -1,0 +1,127 @@
+/*
+Theme Name: Sparc Theme
+Version: 2.0
+Tested up to: 6.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: Sparc Theme.
+Author: SGS team
+Author URI: https://sgs-daas.com/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+	0. 	CSS Reset
+	1. 	Document Setup
+	2. 	Element Base
+	3. 	Helper Classes
+	4. 	Site Header
+	5. 	Menu Modal
+	6. 	Search Modal
+	7. 	Page Templates
+		a. 	Template: Cover Template
+		c. 	Template: Full Width
+	8.  Post: Archive
+	9.  Post: Single
+	10. Blocks
+	11. Entry Content
+	12. Comments
+	13. Site Pagination
+	14. Error 404
+	15. Widgets
+	16. Site Footer
+	17. Media Queries
+
+----------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------- */
+.footer-nav-widgets-wrapper, .menu-modal.cover-modal.header-footer-group{
+	display: none !important;
+}
+/* The Modal (background) */
+.custom_modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+.readmore-button{
+	width: 100%;
+    overflow: hidden;
+}
+.readmore-button p{
+	text-align: center;
+}
+.readmore-button a{
+	display: inline-block;
+    background: #000;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+@font-face {
+	font-family: 'candara';
+	src: url('fonts/Candara.ttf');
+}
+*{
+	font-family: 'candara' !important;
+}
+.pe-icon{
+	font-family: 'Pe-icon-7-stroke' !important;
+}
+.post-meta-single-top{
+	display: none;
+}
+.pdf_buttons a{
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+#main, #site-content{
+	min-height: 87vh;
+}
+.post-meta-single-top{
+	display: none !important;
+}
+.dt-sc-image-title h6{
+	display: none !important;
+}
+#footer{
+	margin-top: 30px !important;
+}
+/* .featured_image{
+	height: 300px;
+	overflow: hidden;
+} */
+.slider_image_custom{
+	top: 80px;
+}
+@media screen and (max-width: 367px) {
+	.slider_text_custom{
+		top: 80px;
+	}
+}
