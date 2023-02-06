@@ -95,7 +95,7 @@ foreach ($records as $s) {
                                         <h3><?php echo $product->post_title; ?><?php echo get_field('category', $product->ID); ?></h3>
                                         <h6><?php echo $count; ?></h6>
                                     </div>
-                                    <p class="short-desc"><?php echo get_field('short_desc', $product->ID); ?></p>
+                                    <p class="short-desc"><?php echo get_field('short_desc',$related_product_id); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +106,7 @@ foreach ($records as $s) {
         }
         ?>
     </div>
-    <div class="readmore-button">
-        <p><a href="<?php echo home_url('products'); ?>">Learn more</a></p>
-    </div>
+<!--    <div class="readmore-button">-->
+<!--        <p><a href="--><?php //echo home_url('products'); ?><!--">Learn more</a></p>-->
+<!--    </div>-->
 </div>

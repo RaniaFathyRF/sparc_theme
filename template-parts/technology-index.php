@@ -33,7 +33,12 @@ $args = array(
                     <div class="vc_column-inner ">
                         <div class="wpb_wrapper">
                             <figure class="wpb_wrapper vc_figure">
-                                <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1170" height="500" src="<?php echo get_field('second_text_section_image', $configuration)["url"]; ?>" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="<?php echo get_field('second_text_section_image', $configuration)["url"]; ?> 1170w, <?php echo get_field('second_text_section_image', $configuration)["url"]; ?> 300w, <?php echo get_field('second_text_section_image', $configuration)["url"]; ?> 768w, <?php echo get_field('second_text_section_image', $configuration)["url"]; ?> 1024w" sizes="(max-width: 1170px) 100vw, 1170px"></div>
+                                <?php $second_text_section_image_url = !empty(get_field('second_text_section_image', $configuration)) ? get_field('second_text_section_image', $configuration)["url"] : '' ?>
+                                <?php if (!empty($second_text_section_image_url)): ?>
+                                    <div class="vc_single_image-wrapper   vc_box_border_grey">
+                                    <img width="1170" height="500" src="<?php echo $second_text_section_image_url; ?>" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="<?php echo $second_text_section_image_url; ?> 1170w, <?php echo $second_text_section_image_url; ?> 300w, <?php echo $second_text_section_image_url; ?> 768w, <?php echo $second_text_section_image_url; ?> 1024w" sizes="(max-width: 1170px) 100vw, 1170px">
+                                </div>
+                                <?php endif; ?>
                             </figure>
                         </div>
                     </div>

@@ -171,12 +171,14 @@
             </div><!-- .post-inner -->
             <div class="vc_row-full-width vc_clearfix">
                 <div class="vc_col-md-5">
-                    <div class="vc_single_image-wrapper vc_box_border_grey"><img width="100%"
-                                                                                 src="<?php echo get_field('single_image', $product->ID)["url"]; ?>"
-                                                                                 class="vc_single_image-img attachment-full"
-                                                                                 alt="" loading="lazy"
-                                                                                 srcset="<?php echo get_field('single_image', $product->ID)["url"]; ?> 1170w, <?php echo get_field('single_image', $product->ID)["url"]; ?> 300w, <?php echo get_field('single_image', $product->ID)["url"]; ?> 768w, <?php echo get_field('single_image', $product->ID)["url"]; ?> 1024w"
-                                                                                 sizes="(max-width: 1170px) 100vw, 1170px">
+                    <div class="vc_single_image-wrapper vc_box_border_grey">
+                        <?php $single_image_url = !empty(get_field('single_image', $product->ID)) ? get_field('single_image', $product->ID)["url"] : '' ?>
+                        <?php if (!empty($single_image_url)): ?>
+                            <img width="100%" src="<?php echo $single_image_url; ?>"
+                                 class="vc_single_image-img attachment-full" alt="" loading="lazy"
+                                 srcset="<?php $single_image_url; ?> 1170w, <?php echo $single_image_url; ?> 300w, <?php echo $single_image_url; ?> 768w, <?php echo $single_image_url; ?> 1024w"
+                                 sizes="(max-width: 1170px) 100vw, 1170px">
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="vc_col-md-7">

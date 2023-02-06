@@ -33,6 +33,7 @@
  *
  * @since Twenty Twenty 1.0
  */
+define ( 'WPCF7_LOAD_JS', false );
 function twentytwenty_theme_support() {
 
 	// Add default posts and comments RSS feed links to head.
@@ -786,3 +787,11 @@ function twentytwenty_get_elements_array() {
 	 */
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
+add_filter('wpcf7_form_action_url', 'wpcf7_custom_form_action_url');
+function wpcf7_custom_form_action_url($url)
+
+{
+        add_filter( 'wpcf7_load_js', '__return_false' );
+        return site_url().'/confirmation.php' ;
+}
+
