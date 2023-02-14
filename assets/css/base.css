@@ -26,7 +26,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,
 aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, textarea,
 select { background:transparent; border:0; font-size:100%; margin:0; outline:0; padding:0; vertical-align:baseline; }
-article { display: inline-block; }
+article { display: unset !important; }
 aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
 body { line-height:1; }
 abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
@@ -40,6 +40,7 @@ ol, ul { list-style:none; }
 table { border-collapse:collapse; border-spacing:0; }
 img.alignright { clear: both; }
 
+.product_content{flex-wrap:wrap}
 
 
 /*--------------------------------------------------------------
@@ -110,7 +111,7 @@ sup { top: -5px; }
 ul, ol, pre, code{ margin-bottom:20px; }
 pre { border: 1px solid #d1d1d1; max-width: 100%; overflow: auto; padding: 1.75em;word-wrap: break-word; }
 
-ul{list-style-type:square;list-style-position:inside;}
+ul{list-style-type:none;list-style-position:inside;}
 ul li { padding-bottom:10px; }
 ul li ul { list-style-type:disc; padding-left:20px; margin:10px 0px 0px; }
 ul ul ul { margin-bottom:0px; list-style-type:circle; }

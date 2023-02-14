@@ -803,7 +803,7 @@ html { height:100%; }
 12.0 - Footer
 --------------------------------------------------------------*/
 
-#footer { width:100%; float:left; clear:both; margin:0px; }
+#footer { width:100%; float:left; clear:both; position:relative; bottom:0  }
 .footer-widgets { padding:80px 0px 70px; width:100%; float:left; clear:both; margin:0px; background-color:#fbfbfb; }
 .footer-widgets .widgettitle{margin-bottom:50px;}
 #footer .container { z-index:9; }
@@ -996,7 +996,7 @@ ul.side-nav li a:before, ul.side-nav > li > a:hover, ul.side-nav > li > ul > li 
 .footer-widgets.dt-sc-dark-bg, #footer .dt-sc-dark-bg, .footer-copyright.dt-sc-dark-bg, .footer-widgets.dt-sc-dark-bg a, #footer .dt-sc-dark-bg a { color:#FFF; }
 #footer .dt-sc-dark-bg h3, #footer .dt-sc-dark-bg h3 a { color:#fff; }
 
-.footer-widgets, #footer, .footer-copyright { color:#777; }
+.footer-widgets, #footer, .footer-copyright { color:#777 }
 /*.footer-widgets a, #footer a, #footer h3 { color:#000; }*/
 
 

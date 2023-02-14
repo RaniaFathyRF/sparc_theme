@@ -40,7 +40,7 @@ ol, ul { list-style:none; }
 table { border-collapse:collapse; border-spacing:0; }
 img.alignright { clear: both; }
 
-
+.product_content{flex-wrap:wrap}
 
 
 /*--------------------------------------------------------------

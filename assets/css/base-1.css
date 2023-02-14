@@ -39,8 +39,12 @@ ins { background-color:red; color:white; text-decoration:none; }
 ol, ul { list-style:none; }
 table { border-collapse:collapse; border-spacing:0; }
 img.alignright { clear: both; }
+.post-inner{
+	padding-top:15px;
+}
 
 
+.product_content{flex-wrap:wrap}
 
 /*--------------------------------------------------------------
 1.1 - Body
